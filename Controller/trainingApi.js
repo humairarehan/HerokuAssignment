@@ -16,11 +16,5 @@ function trainingApi(app, con) {
   app.get('/getApiDBDetails', function (req, res) {
     dbData.getTrainingData(con, res);
   });
-  var server = app.listen(3000, function () {
-
-    var host = "localhost";
-    var port = server.address().port;
-
-    console.log("Driving Training Session Management Listening at http://%s:%s", host, port);
-  });
+  var server = app.listen(process.env.PORT ||  3000);
 }
