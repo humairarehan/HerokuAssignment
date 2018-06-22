@@ -185,7 +185,7 @@ var SystemSetupServiceService = /** @class */ (function () {
         this.http = http;
     }
     SystemSetupServiceService.prototype.getApiDBDetails = function () {
-        return this.http.get("https://mysterious-dusk-89356.herokuapp.com/getApiDBDetails")
+        return this.http.get("https://stormy-forest-57266.herokuapp.com/getApiDBDEtails")
             .map(this.extractData)
             .catch(this.handleErrorObservable);
     };
